@@ -1,7 +1,6 @@
 streamlit
-opencv-python-headless
 mediapipe
 tensorflow
-pyttsx3
-pillow
 numpy
+pillow
+gtts
