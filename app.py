@@ -183,7 +183,7 @@ class Processor(VideoProcessorBase):
 # ==========================================
 # UI
 # ==========================================
-st.title("🎓 Sign Language AI – Academic System")
+st.title("Communication Friend - AI-BASED Sign Language Translation System")
 
 webrtc_streamer(
     key="sign",
@@ -192,3 +192,4 @@ webrtc_streamer(
     media_stream_constraints={"video": True, "audio": False},
     async_processing=True,
 )
+
