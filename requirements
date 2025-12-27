@@ -1,6 +1,0 @@
-streamlit
-mediapipe==0.10.9
-tensorflow
-numpy
-pillow
-gtts
