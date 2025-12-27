@@ -1,24 +1,16 @@
+import os
 import cv2
 import streamlit as st
 import mediapipe as mp
 import numpy as np
-import pyttsx3
 import threading
 import time
 import queue
 from collections import deque
 from tensorflow.keras.models import load_model
 
-# ==================
-# CONFIG & PATHS 
-# ==================
-import os
-
-# Get the directory where app.py is located
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-SEQ_LEN = 30
-MIN_DYNAMIC_FRAMES = 20
 STATIC_MODEL_PATH = os.path.join(BASE_DIR, "models", "static_model.keras")
 DYNAMIC_MODEL_PATH = os.path.join(BASE_DIR, "models", "dynamic_model.keras")
 STATIC_LABELS_PATH = os.path.join(BASE_DIR, "models", "labels_static.npy")
@@ -564,4 +556,5 @@ else:
     if not run_cam:
         st.sidebar.info("Toggle the switch to start camera")
     else:
+
         st.error("Models failed to load. Please check the model paths.")
